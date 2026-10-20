@@ -162,12 +162,34 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.card img {
+.shot {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: center;
+  background: #101114;
+}
+
+.shot-app {
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: left top;
-  background: #111;
+  background: #f3f7f4;
+}
+
+.shot-phone {
+  height: 520px;
+  width: auto;
+  max-width: 100%;
+  margin-inline: auto;
+  aspect-ratio: auto;
+  background: #140e24;
+}
+
+.shot-wide {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: center;
+  background: #07080d;
 }
 
 .card-body {
@@ -269,16 +291,12 @@ h2 {
 @media (min-width: 800px) {
   .card {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(16rem, 0.8fr);
-    align-items: stretch;
+    grid-template-columns: minmax(0, 1.05fr) minmax(17rem, 0.95fr);
+    align-items: center;
   }
 
-  .card img {
-    width: 100%;
-    height: 280px;
-    aspect-ratio: auto;
-    object-fit: cover;
-    object-position: left top;
+  .shot-phone {
+    height: 460px;
   }
 }
 
