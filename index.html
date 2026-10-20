@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amber Toor</title>
+    <meta
+      name="description"
+      content="Amber Toor, AI and Computer Science student at the University of Birmingham. I build AI products people actually use."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="identity">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Amber Toor</h1>
+        <p class="role">AI &amp; Computer Science student, University of Birmingham</p>
+      </div>
+      <div class="header-actions">
+        <nav aria-label="Contact">
+          <a href="https://github.com/amberkaurtoor-09">GitHub</a>
+          <a href="https://www.linkedin.com/in/amber-toor-463797260">LinkedIn</a>
+          <a href="mailto:amberkaurtoor@gmail.com">Email</a>
+        </nav>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false">
+          Dark mode
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="visually-hidden">Introduction</h2>
+        <p>
+          I build AI products people actually use: an LLM tool adopted by hundreds of Stanford
+          Medicine researchers, plus three apps with 1,000+ users combined. 2x hackathon winner
+          (Google AI Hackathon, QuantHacks).
+        </p>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <img
+              src="images/breakpoint.jpg"
+              alt="Breakpoint explorer with a list of past traces and a pipeline ready to run."
+              width="1400"
+              height="1199"
+            />
+            <div class="card-body">
+              <h3>Breakpoint</h3>
+              <p>
+                Root-cause tracer for AI pipeline failures. Diagnosed 8/8 injected faults, with 7
+                passing unit tests.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>FastAPI</li>
+                <li>Streamlit</li>
+                <li>Python</li>
+              </ul>
+              <div class="actions">
+                <a class="button" href="https://breakpoint-5gzgktw6ascsqsmq2xcpby.streamlit.app/">Demo</a>
+                <a class="button button-quiet" href="https://github.com/amberkaurtoor-09/Breakpoint">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="images/bridge.jpg"
+              alt="Bridge language screen, with choices including English, Spanish, and Chinese."
+              width="821"
+              height="1742"
+            />
+            <div class="card-body">
+              <h3>Bridge</h3>
+              <p>
+                Live-captioning visit companion for immigrant patients, built at AWS Biopharma Hack
+                Day. Retrieval-grounded answers from PubMed and ClinicalTrials.gov, with offline
+                fallbacks; tested with 20 patients and hospital staff.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Claude API</li>
+              </ul>
+              <div class="actions">
+                <a class="button" href="https://visit-companion.vercel.app">Demo</a>
+                <a class="button button-quiet" href="https://github.com/amberkaurtoor-09/Bridge">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="images/trace.jpg"
+              alt="Trace knowledge graph connecting thoughts such as Writing and Frontend Craft into skills."
+              width="1400"
+              height="875"
+            />
+            <div class="card-body">
+              <h3>Trace</h3>
+              <p>
+                AI “second-brain” that turns memories into skills, built at Jac Hacks. Hand-built
+                force-directed graph engine, used by students across the University of Birmingham.
+              </p>
+              <ul class="tags" aria-label="Tech stack">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Jac/Jaseci</li>
+              </ul>
+              <div class="actions">
+                <a class="button" href="https://amberkaurtoor-09.github.io/Trace/">Demo</a>
+                <a class="button button-quiet" href="https://github.com/amberkaurtoor-09/Trace">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <ul>
+          <li>
+            <span>Stanford School of Medicine <span class="sep">—</span> Research Intern</span>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span>Google <span class="sep">—</span> Student Insight Programme</span>
+            <span class="year">2025</span>
+          </li>
+          <li>
+            <span>HSBC <span class="sep">—</span> Women in Technology Insight Programme</span>
+            <span class="year">2026</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <nav aria-label="Footer">
+        <a href="https://github.com/amberkaurtoor-09">GitHub</a>
+        <a href="https://www.linkedin.com/in/amber-toor-463797260">LinkedIn</a>
+      </nav>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
